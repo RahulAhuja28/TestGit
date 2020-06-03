@@ -1,0 +1,105 @@
+SELECT DISTINCT ModifiedBy FROM Franchise.Members---4023
+SELECT DISTINCT ModifiedBy FROM Franchise.Clubs---4019
+SELECT DISTINCT ModifiedBy FROM Franchise.Agreements--4020
+
+
+SELECT COUNT(1) FROM  Franchise.Contracts
+SELECT DISTINCT ModifiedBy FROM  Franchise.Contracts
+
+
+--Agreemet
+SELECT TOP 10 *  FROM DW.Agreement 
+SELECT COUNT(1) FROM DW.Agreement  where CreatedBy = 4021--11728
+SELECT COUNT(1) FROM DW.Agreement  where updatedby = 4021--1465951
+
+
+---Location-------2953
+SELECT COUNT(1) FROM DW.Location  where CreatedBy = 4019
+SELECT COUNT(1) FROM DW.Location  where updatedby = 4019
+--------Member---1173715
+SELECT COUNT(1) FROM DW.Customer  where CreatedBy = 4023---3132
+SELECT COUNT(1) FROM DW.Customer  where updatedby = 4023--1170583
+
+SELECT 1170583 + 3132
+
+-----------------PT ---------------------------------------------------------------------
+
+
+----LOCATION 
+SELECT COUNT(1) FROM  Training.Location  WITH(NOLOCK)----2257
+SELECT DISTINCT ModifiedBy  FROM  Training.Location  WITH(NOLOCK)---2257
+
+SELECT COUNT(1) FROM DW.Location WITH(NOLOCK) where CreatedBy = 4031
+SELECT COUNT(1) FROM DW.Location WITH(NOLOCK) where updatedby = 4031
+
+
+----------------USer
+SELECT COUNT(1) FROM  Training.[USER]  WITH(NOLOCK)---1242481
+
+SELECT DISTINCT ModifiedBy  FROM  Training.[USER]  WITH(NOLOCK)
+
+SELECT COUNT(1) FROM DW.Customer WITH(NOLOCK)  where CreatedBy = 4035
+SELECT COUNT(1) FROM DW.Customer WITH(NOLOCK) where updatedby = 4035
+
+SELECT COUNT(1) FROM DW.[CustomerVault] WITH(NOLOCK)  where CreatedBy = 4035--3502
+SELECT COUNT(1) FROM DW.[CustomerVault] WITH(NOLOCK) where updatedby = 4035--1136501
+
+select 1136501 + 3502 -----1140003
+
+
+---Agreements 
+
+SELECT DISTINCT ModifiedBy  FROM  Training.TrainingAgreement  WITH(NOLOCK)--3256
+
+
+
+SELECT COUNT(1) FROM DW.Agreement  where CreatedBy in 
+(
+ 4032
+,4033
+,4034
+)----310
+SELECT COUNT(1) FROM DW.Agreement  where updatedby in 
+(
+ 4032
+,4033
+,4034
+)--15075
+
+SELECT 15075 + 310 ----15385
+
+---Invoices 
+
+	SELECT DISTINCT ModifiedBy  FROM  Training.TrainingAgreementInvoice  WITH(NOLOCK)--189244
+
+SELECT COUNT(1) FROM DW.Relationship where CreatedBy in 
+(
+ 4032
+,4033
+,4034
+)----310
+SELECT COUNT(1) FROM DW.Relationship  where updatedby in 
+(
+ 4032
+,4033
+,4034
+)--15075
+
+
+-------------------------------------------
+
+SELECT COUNT(1) FROM DW.PTRelationshipPaymentDetail where CreatedBy in 
+(
+ 4032
+,4033
+,4034
+)----2379
+SELECT COUNT(1) FROM DW.PTRelationshipPaymentDetail  where updatedby in 
+(
+ 4032
+,4033
+,4034
+)--9107
+
+
+SELECT 2379 + 9107---11486
