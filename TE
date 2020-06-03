@@ -1,0 +1,63 @@
+TE 
+--21-05-2020
+	1) Scrum meeting: 1 Daily internal meeting 
+	2) Franchise Contract missing data analysing DW 1082
+	3) Worked with Neha to load ABC Attrition & Remt data
+	4) HC Conflicts resolved.
+	5) Approved PR 546 under Ticket DW-1041
+	6) Meeting with Prateek & Dhruv related to Missing contract.
+	7) Af Meeting: Grooming, Operational & Standup
+	
+---22-02-2020
+		1) Looking missing contracts after 2020-05-01 to 2020-05-21
+		2) Communicate with prateek & dhruv
+		3) Operation dashboard updated
+		4) Createted JIRA for ABC Remit data load into DM 1091
+		5) Meeting with matt related to clubid null is franchise members 	
+	
+--25-05-2020
+1) Discussed missing contracts
+2) Created JIRA for Creted date greater than updated date 
+3) Worked on JIRA 1092
+4) Meeting with Related ABC files issues
+
+--26-05-2020
+	-- Meeting with deepak related to add columns in Archive table for PT
+	-- DW-1087
+	--Meeting with prateek related to DW-1087
+	--Roadmap Meeting , Operational board meeting , Standup
+	
+--27-05-2020
+	-- Meeting with Deepak & Rgarg related to PT columns add into Archive table.
+	-- Meeting with Prateek related to Active members count --
+	-- Added Tables and sp in SqlProject file and craeted the PR --
+	--reviewed PR #566 This is related FRM changes(986)--
+	--Worked on DW-1101 related to add objects in project file ---
+	--Reviewed 569 under DW-1093--
+	--Meeting with Dhruv & prateek related to DW-1087
+	-- reviewing Dhruv's PR 570 related to (Adding fss missing procs) 
+	-- Working with prateek to update PT data (DW-1002)
+	--ops,Standup,Grooming
+---28-05-2020
+	--Rgarg related to PT discuss on sequence of columns Add in table
+	--Analysing the missing contract 
+	
+---29-05-2020
+	--Meeting with Deepak related to PT JSOn data parse 
+	--Reviewed  Deepka's PR under  1094
+	--Reviewed  Rishbah's PR under DW-1015
+	--Created Ticket DW-1111 and also Ingested Missing clubs into DM.
+	
+------01-06-2020
+	--Meeting with Deepak related to PT testing process
+	--Meeting with dhruv related to contract status= 0 and membercontract data updation 
+	-- Loaded contract, Agreement , Relationship and member missing data into DM 
+	
+--02-02-2020
+	-- Approved JIRA DW-1094
+	--Approved JIRA DW
+	--Completed 1082
+	--Completed Ticket DW-1119
+	--Operational board updated
+	-- Meeting with Rakesh related to GK parallel execution of pipelines 
+	
