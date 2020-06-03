@@ -1,0 +1,7 @@
+
+Test1
+   ------Master Branch merge into another branch
+    git checkout master 
+    git Pull 
+    git checkout my-feature-branch 
+    git merge origin/master
